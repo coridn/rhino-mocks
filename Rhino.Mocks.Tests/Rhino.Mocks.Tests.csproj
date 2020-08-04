@@ -31,7 +31,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -426,17 +426,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Rhino.Mocks.Tests.Model\Rhino.Mocks.Tests.Model.csproj">
-      <Project>{3078B943-10A5-41FA-A68A-7C4FC98506A0}</Project>
-      <Name>Rhino.Mocks.Tests.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Rhino.Mocks\Rhino.Mocks 2.0.csproj">
-      <Name>Rhino.Mocks</Name>
-      <Project>{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}</Project>
-      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
   </ItemGroup>
   <ItemGroup>
@@ -461,5 +450,12 @@
       <Link>ayende-open-source.snk</Link>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rhino.Mocks.Tests.Model\Rhino.Mocks.Tests.Model.csproj">
+      <Project>{3078b943-10a5-41fa-a68a-7c4fc98506a0}</Project>
+      <Name>Rhino.Mocks.Tests.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
