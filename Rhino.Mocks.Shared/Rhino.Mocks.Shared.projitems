@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9a26d478-2861-4774-90d9-b4a45a8ae626</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Rhino.Mocks.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Arg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ArgManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BackToRecordOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CompatabilityWith2.0.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\AbstractConstraint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\AllPropertiesMatchConstraint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\Constraints.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\Is.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\IsArg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\ListArg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\OutRefArgDummy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\Property.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\PublicField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\Text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constraints\TextArg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Delegates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DoNotExpect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\ExpectationViolationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\ObjectNotMockFromThisRepositoryException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Expect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Expectations\AbstractExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Expectations\AnyArgsExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Expectations\ArgsEqualExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Expectations\CallbackExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Expectations\ConstraintsExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExpectationVerificationInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generated\ExpectationsListGenerated.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Generated\ProxyMethodExpectationsDictionaryGenerated.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Generated\ProxyStateDictionaryGenerated.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\CreateMethodExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\CreateMethodExpectationForSetupResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\DelegateTargetInterfaceCreator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\EventRaiser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Actions\HandleEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Actions\InvokeMethodAgainstMockedObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Actions\InvokeProperty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Actions\Proceed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Actions\RegularInvocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\InvocationVisitor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\InvocationVisitorsFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\AndSpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\FollowsEventNamingStandard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\IsAnEventInvocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\IsAnInvocationOfAMethodBelongingToObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\IsAnInvocationOnAMockedObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\IsAPropertyInvocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\IsInvocationThatShouldTargetOriginal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Invocation\Specifications\NamedEventExistsOnDeclaringType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\MethodOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\MockedObjectsEquality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\NullLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\ProxyInstance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Range.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RecordDynamicMockState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RecordMockState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RecordPartialMockState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RemotingMock\IRemotingProxyOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RemotingMock\RemotingInvocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RemotingMock\RemotingMockGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RemotingMock\RemotingProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RemotingMock\RemotingProxyDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RemotingMock\RemotingProxyMockedObjectGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RepeatableOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\ReplayDynamicMockState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\ReplayMockState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\ReplayPartialMockState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\RhinoInterceptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\StubRecordMockState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\StubReplayMockState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\TextWriterExpectationLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\TraceWriterExpectationLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\TraceWriterWithStackTraceExpectationWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\Validate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Impl\VerifiedMockState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ICreateMethodExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IEventRaiser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IExpectation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IExpectationLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IInvocationAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMethodOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMethodRecorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMockedObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMockState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IPartialMockMarker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IRepeat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\OriginalCallOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LastCall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodInvocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MethodRecorders\MethodRecorderBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodRecorders\OrderedMethodRecorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodRecorders\ProxyMethodExpectationTriplet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodRecorders\ProxyMethodPair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodRecorders\RecorderChanger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodRecorders\UnorderedMethodRecorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Mocker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MockRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MockRepositoryAAA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MockRepositoryRecordPlayback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RhinoMocks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RhinoMocksExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SetupResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\GenericsUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\MethodCallUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\ReturnValueUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)With.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)__ProtectAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Diagram.cd" />
+    <None Include="$(MSBuildThisFileDirectory)Diagrams\Constraints.cd" />
+    <None Include="$(MSBuildThisFileDirectory)Diagrams\Expectations.cd" />
+    <None Include="$(MSBuildThisFileDirectory)Diagrams\MethodRecorders.cd" />
+    <None Include="$(MSBuildThisFileDirectory)Diagrams\MockStates.cd" />
+  </ItemGroup>
+</Project>

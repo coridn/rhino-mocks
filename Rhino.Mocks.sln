@@ -10,7 +10,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Mocks.Tests.Model", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Mocks.GettingStarted", "Rhino.Mocks.GettingStarted\Rhino.Mocks.GettingStarted.csproj", "{59F8A3E2-80C5-4250-909A-16741DF81B23}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Rhino.Mocks.Shared", "Rhino.Mocks.Shared\Rhino.Mocks.Shared.shproj", "{9A26D478-2861-4774-90D9-B4A45A8AE626}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems*{9a26d478-2861-4774-90d9-b4a45a8ae626}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -25,6 +30,7 @@ Global
 		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Debug|Win32.Build.0 = Debug|Any CPU
 		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C63839EC-BEF3-4DCD-BE23-B6DA21E8BE20}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
@@ -35,6 +41,7 @@ Global
 		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Debug|Win32.Build.0 = Debug|Any CPU
 		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E8FECC7-9E9B-4275-A938-D956F5E5D4F8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
@@ -45,6 +52,7 @@ Global
 		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Debug|Win32.Build.0 = Debug|Any CPU
 		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3078B943-10A5-41FA-A68A-7C4FC98506A0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
@@ -55,6 +63,7 @@ Global
 		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Debug|Win32.Build.0 = Debug|Any CPU
 		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Release|Any CPU.Build.0 = Release|Any CPU
 		{59F8A3E2-80C5-4250-909A-16741DF81B23}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
