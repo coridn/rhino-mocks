@@ -9,3 +9,5 @@ build/
 _ReSharper.*/
 AssemblyInfo.cs
 *.user
+/Backup2
+/UpgradeLog.htm
