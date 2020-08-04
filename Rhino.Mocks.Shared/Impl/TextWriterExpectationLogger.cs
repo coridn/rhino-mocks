@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+#if DOTNET35
 using Castle.Core.Interceptor;
+#elif NETSTANDARD2_0
+using Castle.DynamicProxy;
+#endif
 using Rhino.Mocks.Interfaces;
 using Rhino.Mocks.Utilities;
 

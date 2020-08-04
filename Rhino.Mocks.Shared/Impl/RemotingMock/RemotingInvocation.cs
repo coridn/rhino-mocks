@@ -1,3 +1,4 @@
+#if DOTNET35
 using System;
 
 namespace Rhino.Mocks.Impl.RemotingMock
@@ -103,3 +104,4 @@ namespace Rhino.Mocks.Impl.RemotingMock
         }
     }
 }
+#endif

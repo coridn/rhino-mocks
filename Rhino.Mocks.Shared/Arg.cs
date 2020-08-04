@@ -137,17 +137,18 @@ namespace Rhino.Mocks
 			return Arg<T>.Is.Equal(arg);
 		}
 
+#if DOTNET35
 		/// <summary>
 		/// 
 		/// </summary>
 		/// <typeparam name="T"></typeparam>
 		/// <param name="predicate"></param>
 		/// <returns></returns>
-        public static T Matches<T>(Expression<Predicate<T>> predicate)
+		public static T Matches<T>(Expression<Predicate<T>> predicate)
         {
             return Arg<T>.Matches(predicate);
         }
-
+#else
 		/// <summary>
 		/// 
 		/// </summary>
@@ -158,6 +159,7 @@ namespace Rhino.Mocks
         {
             return Arg<T>.Matches(constraint);
         }
+#endif
 	}
 }
 

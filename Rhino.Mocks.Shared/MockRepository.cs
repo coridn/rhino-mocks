@@ -34,13 +34,19 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Reflection;
 using System.Text;
+#if DOTNET35
 using Castle.Core.Interceptor;
 using Castle.DynamicProxy;
+#elif NETSTANDARD2_0
+using Castle.DynamicProxy;
+#endif
 using Rhino.Mocks.Exceptions;
 using Rhino.Mocks.Generated;
 using Rhino.Mocks.Impl;
 using Rhino.Mocks.Impl.Invocation;
+#if DOTNET35
 using Rhino.Mocks.Impl.RemotingMock;
+#endif
 using Rhino.Mocks.Interfaces;
 using Rhino.Mocks.MethodRecorders;
 
@@ -116,7 +122,7 @@ namespace Rhino.Mocks
         /// </summary>
         protected delegate IMockState CreateMockState(IMockedObject mockedObject);
 
-        #region Variables
+#region Variables
 
         /*
          * Variable: generatorMap
@@ -178,9 +184,9 @@ namespace Rhino.Mocks
         private ProxyGenerationOptions proxyGenerationOptions;
         private InvocationVisitorsFactory invocationVisitorsFactory;
 
-        #endregion
+#endregion
 
-        #region Properties
+#region Properties
 
         /*
          * Property: Recorder
@@ -196,9 +202,9 @@ namespace Rhino.Mocks
             get { return recorders.Peek() as IMethodRecorder; }
         }
 
-        #endregion
+#endregion
 
-        #region c'tors
+#region c'tors
 
         /* function: MockRepository
          * Create a new instance of MockRepository
@@ -211,10 +217,12 @@ namespace Rhino.Mocks
         {
             proxyGenerationOptions = new ProxyGenerationOptions
             {
+#if DOTNET35
                 AttributesToAddToGeneratedTypes = 
                     {
                         new __ProtectAttribute()
                     }
+#endif
             };
             recorders = new Stack();
             repeatableMethods = new ProxyMethodExpectationsDictionary();
@@ -230,9 +238,9 @@ namespace Rhino.Mocks
         }
 
 
-        #endregion
+#endregion
 
-        #region Methods
+#region Methods
 
         /*
          * Method: Ordered
@@ -531,7 +539,11 @@ namespace Rhino.Mocks
         {
             ProxyInstance rhinoProxy = new ProxyInstance(this, type);
             RhinoInterceptor interceptor = new RhinoInterceptor(this, rhinoProxy,invocationVisitorsFactory.CreateStandardInvocationVisitors(rhinoProxy, this));
+#if DOTNET35
             object transparentProxy = new RemotingMockGenerator().CreateRemotingMock(type, interceptor, rhinoProxy);
+#else
+			object transparentProxy = null;
+#endif
             IMockState value = factory(rhinoProxy);
             proxies.Add(transparentProxy, value);
             return transparentProxy;
@@ -651,9 +663,9 @@ namespace Rhino.Mocks
             return proxies[mock].GetLastMethodOptions<T>();
         }
 
-        #endregion
+#endregion
 
-        #region Implementation Details
+#region Implementation Details
 
         /*
          * Method: MethodCall
@@ -882,12 +894,12 @@ namespace Rhino.Mocks
             {
                 return (IMockedObject)mockedInstance;
             }
-
+#if DOTNET35
             if (RemotingMockGenerator.IsRemotingProxy(mockedInstance))
             {
                 return RemotingMockGenerator.GetMockedObjectFromProxy(mockedInstance);
             }
-
+#endif
             return null;
         }
 
@@ -905,9 +917,9 @@ namespace Rhino.Mocks
             recorders.Push(newRecorder);
         }
 
-        #endregion
+#endregion
 
-        #region Convenience Methods
+#region Convenience Methods
 
         /// <summary>
         /// All the mock objects in this repository will be moved
@@ -1073,7 +1085,7 @@ namespace Rhino.Mocks
             repository.proxies[proxy].SetExceptionToThrowOnVerify(expectationViolationException);
         }
 
-        #endregion
+#endregion
 
         /// <summary>
         /// Creates a mock for the spesified type with strict mocking semantics.

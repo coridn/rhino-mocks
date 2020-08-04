@@ -30,10 +30,14 @@
 using System;
 using System.Reflection;
 using System.Text;
+#if DOTNET35
 using Castle.Core.Interceptor;
+using Castle.DynamicProxy;
+#elif NETSTANDARD2_0
+using Castle.DynamicProxy;
+#endif
 using Rhino.Mocks.Exceptions;
 using Rhino.Mocks.Interfaces;
-using Castle.DynamicProxy;
 
 namespace Rhino.Mocks.Impl
 {

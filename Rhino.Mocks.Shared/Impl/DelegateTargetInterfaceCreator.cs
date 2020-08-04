@@ -33,6 +33,9 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Threading;
 using Castle.DynamicProxy;
+#if NETSTANDARD2_0
+using Rhino.Mocks.Shared;
+#endif
 
 namespace Rhino.Mocks.Impl
 {

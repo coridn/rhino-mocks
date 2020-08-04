@@ -29,7 +29,11 @@
 #endregion
 
 using System;
+#if DOTNET35
 using Castle.Core.Interceptor;
+#elif NETSTANDARD2_0
+using Castle.DynamicProxy;
+#endif
 using Rhino.Mocks.Constraints;
 using System.Reflection;
 
