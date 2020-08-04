@@ -32,7 +32,7 @@ using System.Diagnostics;
 using System.Reflection;
 #if DOTNET35
 using Castle.Core.Interceptor;
-#elif NETSTANDARD2_0
+#else
 using Castle.DynamicProxy;
 #endif
 using Rhino.Mocks.Exceptions;

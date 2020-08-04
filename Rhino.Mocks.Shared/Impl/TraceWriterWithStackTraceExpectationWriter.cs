@@ -4,7 +4,7 @@ namespace Rhino.Mocks.Impl
 	using System.IO;
 #if DOTNET35
 	using Castle.Core.Interceptor;
-#elif NETSTANDARD2_0
+#else
 	using Castle.DynamicProxy;
 #endif
 	using Interfaces;

@@ -32,12 +32,13 @@ using System.Reflection;
 using System.Text;
 #if DOTNET35
 using Castle.Core.Interceptor;
-#elif NETSTANDARD2_0
+#else
 using Castle.DynamicProxy;
 #endif
 using Rhino.Mocks.Impl;
 using Rhino.Mocks.Interfaces;
 using Rhino.Mocks.Utilities;
+using Range = Rhino.Mocks.Impl.Range;
 
 namespace Rhino.Mocks.Expectations
 {
