@@ -31,7 +31,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -455,7 +455,10 @@
       <Project>{3078b943-10a5-41fa-a68a-7c4fc98506a0}</Project>
       <Name>Rhino.Mocks.Tests.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rhino.Mocks\Rhino.Mocks.csproj">
+      <Project>{1e8fecc7-9e9b-4275-a938-d956f5e5d4f8}</Project>
+      <Name>Rhino.Mocks</Name>
+    </ProjectReference>
   </ItemGroup>
-  <Import Project="..\Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

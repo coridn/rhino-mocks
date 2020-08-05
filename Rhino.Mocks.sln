@@ -12,16 +12,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Mocks.GettingStarted"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Rhino.Mocks.Shared", "Rhino.Mocks.Shared\Rhino.Mocks.Shared.shproj", "{9A26D478-2861-4774-90D9-B4A45A8AE626}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Mocks.Standard", "Rhino.Mocks.Standard\Rhino.Mocks.Standard.csproj", "{9C338291-9E0B-47A3-BE17-FB2D387ECF33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rhino.Mocks.Standard", "Rhino.Mocks.Standard\Rhino.Mocks.Standard.csproj", "{9C338291-9E0B-47A3-BE17-FB2D387ECF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Mocks.Core", "Rhino.Mocks.Core\Rhino.Mocks.Core.csproj", "{D393418E-9FD9-484B-BAA7-788867D5EB14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rhino.Mocks.Core", "Rhino.Mocks.Core\Rhino.Mocks.Core.csproj", "{D393418E-9FD9-484B-BAA7-788867D5EB14}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems*{1e8fecc7-9e9b-4275-a938-d956f5e5d4f8}*SharedItemsImports = 4
 		Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems*{9a26d478-2861-4774-90d9-b4a45a8ae626}*SharedItemsImports = 13
 		Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems*{9c338291-9e0b-47a3-be17-fb2d387ecf33}*SharedItemsImports = 5
-		Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems*{c63839ec-bef3-4dcd-be23-b6da21e8be20}*SharedItemsImports = 4
 		Rhino.Mocks.Shared\Rhino.Mocks.Shared.projitems*{d393418e-9fd9-484b-baa7-788867d5eb14}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
