@@ -52,9 +52,9 @@ namespace Rhino.Mocks
 		/// demo.AssertWasCalled(x => x.Bar(Arg{string}.Matches(a => a.StartsWith("b") &amp;&amp; a.Contains("ba"))));
 		/// </code>
 		/// </example>
-		public static T Matches<TPredicate>(Predicate<TPredicate> predicate)
+		public static T Matches<T>(Predicate<T> predicate)
 		{
-			ArgManager.AddInArgument(Rhino.Mocks.Constraints.Is.Matching<TPredicate>(predicate));
+			ArgManager.AddInArgument(Rhino.Mocks.Constraints.Is.Matching<T>(predicate));
 			return default(T);
 		}
 #endif
